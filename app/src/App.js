@@ -1,8 +1,18 @@
 import React from "react";
 
-export default () => (
-  <>
-    <h1>Welcome to React Parcel Micro App!</h1>
-    <p>Hard to get more minimal than this React app.</p>
-  </>
-);
+export default class extends React.Component {
+  state = { count: null };
+
+  componentDidMount = async () => {
+    
+  };
+
+  render() {
+    return (
+      <>
+        <h1>Count: {this.state.count}</h1>
+        <button>Increment</button>
+      </>
+    );
+  }
+}
